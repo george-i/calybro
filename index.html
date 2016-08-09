@@ -20,29 +20,60 @@
 
     <section class="main-content">
       <h3>
-<a id="how-does-it-look-like-the-device-concept" class="anchor" href="#how-does-it-look-like-the-device-concept" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How does it look like the device concept.</h3>
+<a id="how-does-look-like-the-device-concept" class="anchor" href="#how-does-look-like-the-device-concept" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How does look like the device concept.</h3>
 
 <p><img src="http://i.imgur.com/5fPmn4o.png" alt="Calybro device concept"></p>
 
 <h3>
-<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Designer Templates</h3>
+<a id="what-is-this-device-for" class="anchor" href="#what-is-this-device-for" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>What is this device for</h3>
 
-<p>We’ve crafted some handsome templates for you to use. Go ahead and click 'Continue to layouts' to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved.</p>
-
-<h3>
-<a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Creating pages manually</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can @mention a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor’s GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<ul>
+<li>It can be primarily used for legs and abdomen strength exercises.</li>
+<li>Improves running form. Is no way to overstride on it. The user cannot perform the exercise if lands other way than mid-front of the foot.</li>
+<li>Detects eventual unbalances, highly accurate.</li>
+<li>Collects biomechanics data and uploads it to servers and apps.</li>
+</ul>
 
 <h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support or Contact</h3>
+<a id="the-components-and-their-role" class="anchor" href="#the-components-and-their-role" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The components and their role</h3>
 
-<p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
+<ul>
+<li><p>The running pad
+<img src="http://i.imgur.com/8Aa0LMu.png" alt="Calybro running pad">
+The running pad is made of athletics tracks material, 50x50 cm and 2 cm thick.
+There are two horizontal bands and two vertical bands. These are <a href="https://www.adafruit.com/product/1361">velostat</a> sensors. When touched, these sensors will transmit certain information to the electronic device.<br>
+2 distance sensors are placed at the end of the velostat bands.</p></li>
+<li><p>The electronic component
+<img alt="Calybro - electronic part">
+The electronic component has a display showing various information about the activity. An Arduino board is linked to the velostat bands from the running pad. The Arduino board has a bluetooth module, which will communicate with a mobile application. </p></li>
+</ul>
+
+<h3>
+<a id="how-to-use-the-fitness-device" class="anchor" href="#how-to-use-the-fitness-device" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How to use the fitness device</h3>
+
+<h2>
+<a id="startingstopping-an-activity" class="anchor" href="#startingstopping-an-activity" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Starting/stopping an activity</h2>
+
+<ul>
+<li>Start the mobile application to connect with the device</li>
+<li>Press "Start" on the device's button</li>
+<li>Start the activity</li>
+<li>Press "Stop" on the mobile application when done, or press "Finish" on the fitness device
+## Using the running pad
+The running pad has a transparent slippery surface. The athletes would wear socks only, to facilitate the sliding motion.
+## The fitness activities
+Start sliding beginning from the upper velostat band, toward the lower velostat band, trying to touch the bands intersections.
+## Display information
+When touching the upper bands intersections, the landing sign, denoted with a target mark, will flash green and the accuracy will be updated.<br>
+When releasing the foot from the ground, the take off sign, denoted with a bow, will flash green and its accuracy will be updated.<br>
+The distance ran will be calculated with the help of the distance sensors times steps made.</li>
+</ul>
+
+<h3>
+<a id="the-heatmap-of-muscles-involved-in-the-activity" class="anchor" href="#the-heatmap-of-muscles-involved-in-the-activity" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The heatmap of muscles involved in the activity</h3>
+
+<p><img src="http://i.imgur.com/cWrnCKq.png" alt="Calybro - muscles affected">
+The main activity which can be done is by all means a strength exercise. The effects on aerobic capacity is too low to be used for this purpose.</p>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/george-i/calybro">Calybro</a> is maintained by <a href="https://github.com/george-i">george-i</a>.</span>
