@@ -1,25 +1,34 @@
-<!DOCTYPE html>
-<html lang="en-us">
+<!doctype html>
+<html>
   <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Calybro by george-i</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
   </head>
   <body>
-    <section class="page-header">
-      <h1 class="project-name">Calybro</h1>
-      <h2 class="project-tagline">Calybro is a fitness device which measures and improves the strength and balance of athletes.</h2>
-      <a href="https://github.com/george-i/calybro" class="btn">View on GitHub</a>
-      <a href="https://github.com/george-i/calybro/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/george-i/calybro/tarball/master" class="btn">Download .tar.gz</a>
-    </section>
+    <div class="wrapper">
+      <header>
+        <h1>Calybro</h1>
+        <p>Calybro is a fitness device which measures and improves the strength and balance of athletes.</p>
 
-    <section class="main-content">
-      <h2>
+        <p class="view"><a href="https://github.com/george-i/calybro">View the Project on GitHub <small>george-i/calybro</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/george-i/calybro/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/george-i/calybro/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/george-i/calybro">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h2>
 <a id="how-does-look-like-the-device-concept" class="anchor" href="#how-does-look-like-the-device-concept" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How does look like the device concept.</h2>
 
 <p><img src="http://i.imgur.com/5fPmn4o.png" alt="Calybro device concept"></p>
@@ -49,7 +58,7 @@ There are two horizontal bands and two vertical bands. These are <a href="https:
 <a id="the-electronic-component" class="anchor" href="#the-electronic-component" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The electronic component</h3>
 
 <p>The electronic component has a display showing various information about the activity. An Arduino board is linked to the velostat bands from the running pad. The Arduino board has a bluetooth module, which will communicate with a mobile application. 
-<img alt="Calybro - electronic part"></p>
+<img src="http://i.imgur.com/OT0tCrQ.png" alt="Calybro - electronic part"></p>
 
 <h2>
 <a id="how-to-use-the-fitness-device" class="anchor" href="#how-to-use-the-fitness-device" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How to use the fitness device</h2>
@@ -61,31 +70,38 @@ There are two horizontal bands and two vertical bands. These are <a href="https:
 <li>Start the mobile application to connect with the device</li>
 <li>Press "Start" on the device's button</li>
 <li>Start the activity</li>
-<li>Press "Stop" on the mobile application when done, or press "Finish" on the fitness device
-### Using the running pad
-The running pad has a transparent slippery surface. The athletes would wear socks only, to facilitate the sliding motion.
-### The fitness activities
-Start sliding beginning from the upper velostat band, toward the lower velostat band, trying to touch the bands intersections.
-## Display information
-When touching the upper bands intersections, the landing sign, denoted with a target mark, will flash green and the accuracy will be updated.<br>
-When releasing the foot from the ground, the take off sign, denoted with a bow, will flash green and its accuracy will be updated.<br>
-The distance ran will be calculated with the help of the distance sensors times steps made.</li>
+<li>Press "Stop" on the mobile application when done, or press "Finish" on the fitness device</li>
 </ul>
+
+<h3>
+<a id="using-the-running-pad" class="anchor" href="#using-the-running-pad" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Using the running pad</h3>
+
+<p>The running pad has a transparent slippery surface. The athletes would wear socks only, to facilitate the sliding motion.</p>
+
+<h3>
+<a id="the-fitness-activities" class="anchor" href="#the-fitness-activities" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The fitness activities</h3>
+
+<p>Start sliding beginning from the upper velostat band, toward the lower velostat band, trying to touch the bands intersections.</p>
+
+<h3>
+<a id="display-information" class="anchor" href="#display-information" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Display information</h3>
+
+<p>When touching the upper bands intersections, the landing sign, denoted with a target mark, will flash green and the accuracy will be updated.<br>
+When releasing the foot from the ground, the take off sign, denoted with a bow, will flash green and its accuracy will be updated.<br>
+The distance ran will be calculated with the help of the distance sensors times steps made.</p>
 
 <h3>
 <a id="the-heatmap-of-muscles-involved-in-the-activity" class="anchor" href="#the-heatmap-of-muscles-involved-in-the-activity" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The heatmap of muscles involved in the activity</h3>
 
 <p>The main activity which can be done is by all means a strength exercise. The effects on aerobic capacity is too low to be used for this purpose.
 <img src="http://i.imgur.com/cWrnCKq.png" alt="Calybro - muscles affected"></p>
-
-      <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/george-i/calybro">Calybro</a> is maintained by <a href="https://github.com/george-i">george-i</a>.</span>
-
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/george-i">george-i</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
-
-    </section>
-
-  
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
   </body>
 </html>
